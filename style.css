@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    color: hsl(0, 0%, 8%);
+    font-family: 'Poppins',sans-serif;
+    font-weight: 700;
+    
+}
+div label {
+    letter-spacing: 2px;
+    font-size: 14px;
+    color: hsl(0, 1%, 44%);
+}
+div input {
+    width: 60%;
+    height: 50px;
+    font-size: 24px;  
+    text-indent: 10px;
+
+}
+.error-message{
+    color: hsl(0, 100%, 67%);
+    font-weight: 400;
+    display: none;
+    font-style: italic;
+    font-size: smaller;
+}
+input:hover
+{
+    border: 2px solid hsl(259, 100%, 65%);
+    border-radius: 3px;
+    
+}
+input::placeholder {
+    text-indent: 10px;
+  }
+  
+  
+body {
+    background-color: hsl(0, 0%, 86%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+}
+main {
+    background-color: hsl(0, 0%, 100%);
+    width: 840px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px 25px 200px 25px;
+}
+.lin{
+    display: flex;
+    flex-direction: row
+}
+.lin span{
+display: inline-block;
+width: 650px;
+height: 1px;
+background-color: hsl(0, 0%, 86%);
+margin-top: 65px;
+}
+.inp{
+    display: flex;
+    flex-direction: row;
+    padding-left: 45px;
+}
+.inp div{
+    display: flex;
+    flex-direction: column;
+}
+#subm{
+    background-color: hsl(259, 100%, 65%);
+    border-radius: 200%;
+    width: 100px;
+    height: 100px;
+    border: none;
+    margin-top: 15px;
+    cursor: pointer;
+}
+#subm:hover{
+    background-color: hsl(0, 0%, 8%);
+}
+#year, #month,#day{
+    color: hsl(259, 100%, 65%);
+    
+}
+.outp {
+    font-size:72px;
+    font-weight: 700;
+    font-style: italic;
+    text-indent: -340px;
+}
+.outp span{
+    flex-direction: column;
+}
+
+
+@media only screen and (max-width: 768px){
+    body{
+        min-height: 150vh;
+    }
+    main{
+        width: 700px;
+        height: 700px;
+        margin-left: 380px;
+    }
+
+    .outp{
+        margin-top: 55px;
+        text-indent: -200px;
+    }
+    #subm{
+        position: absolute;
+        left: 300px;
+    }
+}

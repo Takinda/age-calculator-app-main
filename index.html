@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <script src="test.js"></script>
+  
+  <title>Frontend Mentor | Age calculator app</title>
+  <!------------------------------------------------------------------------------------------------------------->
+  <link rel="stylesheet" href="style.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<main>
+
+
+  <div class="inp">
+
+
+    <div class="Day">
+      <label for="Day">DAY</label>
+      <input type="text" id="Day" placeholder="DD" required>
+      <span class="error-message" id="dayEmptyMessage">Please enter a day</span>
+      <span class="error-message" id="dayInvalidMessage">Please enter a valid day</span>
+        </div>
+
+
+    <div class="Month">
+    <label for="Month">MONTH</label>
+    <input type="text" id="Month" placeholder="MM" required>
+    <span class="error-message" id="monthEmptyMessage">Please enter a month</span>
+    <span class="error-message" id="monthInvalidMessage">Please enter a valid month</span>
+    </div>
+
+
+    <div class="Year">
+    <label for="Year">YEAR</label>
+    <input type="text" id="Year" placeholder="YYYY" required>
+    <span class="error-message" id="yearEmptyMessage">Please enter a year</span>
+    <span class="error-message" id="yearInvalidMessage">Please enter a valid year</span>
+    </div>
+  </div>
+
+
+
+  <div class="lin">
+      <span></span>
+    <button id="subm" onclick="`${Getbirth()}`">
+      <svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg>
+      </button>
+  </div>
+  <div class="outp">
+    <p><span id="year">- -</span>  years</p>
+    <p><span id="month">- -</span> months</p>
+    <p><span id="day">- -</span> days</p>
+  </div>
+  
+</main>
+  
+  
+  
+
+ 
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Ghanim</a>.
+  </div>
+</body>
+</html>
